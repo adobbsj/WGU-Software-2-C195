@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="558.0" prefWidth="963.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CustomerMenu">
+    <children>
+        <Label layoutX="42.0" layoutY="30.0" text="Appointment Scheduler">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TableView id="CustomerTable" fx:id="CustomerTable" layoutX="42.0" layoutY="137.0" prefHeight="345.0" prefWidth="841.0">
+            <columns>
+                <TableColumn id="CustomerID" fx:id="CustomerIDColumn" prefWidth="86.0" text="Customer ID" />
+                <TableColumn id="CustomerName" fx:id="NameColumn" prefWidth="139.0" text="Name" />
+                <TableColumn id="Address" fx:id="AddressColumn" prefWidth="171.0" text="Address" />
+                <TableColumn id="PostalCode" fx:id="PostalCodeColumn" prefWidth="105.0" text="Postal Code" />
+                <TableColumn id="PhoneNumber" fx:id="PhoneNumberColumn" prefWidth="197.0" text="Phone Number" />
+            <TableColumn id="Country" fx:id="CountryColumn" prefWidth="142.0" text="State/Province" />
+            </columns>
+        </TableView>
+        <Button fx:id="ModifyCustomer" layoutX="435.0" layoutY="505.0" mnemonicParsing="false" onAction="#modifyCustomer" text="Modify Customer Details" />
+        <Button fx:id="RemoveCustomer" layoutX="591.0" layoutY="505.0" mnemonicParsing="false" onAction="#removeCustomer" text="Remove Customer" />
+        <Button fx:id="LogoffButton" layoutX="774.0" layoutY="505.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+        <Button fx:id="AddCustomer" layoutX="282.0" layoutY="505.0" mnemonicParsing="false" onAction="#addCustomer" text="Add New Customer" />
+        <RadioButton fx:id="AllRadio" layoutX="766.0" layoutY="89.0" mnemonicParsing="false" onAction="#allView" text="View all" />
+        <RadioButton fx:id="CustomerRadio" layoutX="632.0" layoutY="89.0" mnemonicParsing="false" onAction="#CustomerView" text="View by customer" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="558.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CreateAppointment">
+   <children>
+      <TextField fx:id="idField" disable="true" editable="false" layoutX="159.0" layoutY="49.0" promptText="Auto-Generated" />
+      <TextField fx:id="titleField" layoutX="159.0" layoutY="83.0" promptText="conference meet" />
+      <TextField fx:id="descriptionField" layoutX="159.0" layoutY="120.0" promptText="sales talk" />
+      <TextField fx:id="locationField" layoutX="159.0" layoutY="155.0" promptText="room A" />
+      <TextField fx:id="typeField" layoutX="159.0" layoutY="195.0" promptText="Planning" />
+      <Label layoutX="52.0" layoutY="53.0" text="Appointment ID" />
+      <Label layoutX="59.0" layoutY="87.0" text="Title" />
+      <Label layoutX="58.0" layoutY="124.0" text="Description" />
+      <Label layoutX="60.0" layoutY="159.0" text="Location" />
+      <Label layoutX="58.0" layoutY="199.0" text="Type" />
+      <Label layoutX="57.0" layoutY="270.0" text="Start Time" />
+      <Label layoutX="58.0" layoutY="308.0" text="End Time" />
+      <Label layoutX="56.0" layoutY="345.0" text="User ID" />
+      <Label layoutX="55.0" layoutY="387.0" text="Customer ID" />
+      <Button fx:id="saveButton" layoutX="160.0" layoutY="484.0" mnemonicParsing="false" onAction="#Save" text="Save" />
+      <Button fx:id="cancelButton" layoutX="256.0" layoutY="484.0" mnemonicParsing="false" onAction="#Cancel" text="Cancel" />
+      <Label layoutX="27.0" layoutY="14.0" text="Add Appointment">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="Date" layoutX="159.0" layoutY="232.0" promptText="select" />
+      <Label layoutX="58.0" layoutY="236.0" text="Date" />
+      <ComboBox fx:id="startCombo" layoutX="159.0" layoutY="266.0" prefWidth="150.0" promptText="Start Time" />
+      <ComboBox fx:id="endCombo" layoutX="159.0" layoutY="304.0" prefWidth="150.0" promptText="End Time" />
+      <ComboBox fx:id="userIDCombo" layoutX="159.0" layoutY="341.0" prefWidth="150.0" promptText="User ID" />
+      <ComboBox fx:id="CustomerIDCombo" layoutX="159.0" layoutY="383.0" prefWidth="150.0" promptText="Customer ID" />
+      <ComboBox fx:id="contactIDCombo" layoutX="159.0" layoutY="423.0" prefWidth="150.0" promptText="Person of Contact" />
+      <Label layoutX="57.0" layoutY="427.0" text="Contact ID" />
+   </children>
+</AnchorPane>
